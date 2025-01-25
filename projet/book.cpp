@@ -21,7 +21,7 @@ bool book::isCorrect(){
     return true;
 }
 
-int book::getPosition(book b)
+int book::getPosition(book* b)
 {
     auto it = find(listBooks.begin(), listBooks.end(),b);
     return it - listBooks.begin();
@@ -42,7 +42,7 @@ void book::setAuthors(const std::string &newAuthors)
     authors = newAuthors;
 }
 
-std::string book::getUrl() const
+std::string book::getUrl()
 {
     return url;
 }
@@ -84,10 +84,10 @@ void book::setProgress(int newProgress)
 
 page book::getUrlImage(int nb)
 {
-    if(nb > listPages.size()){
+    if(nb >= listPages.size()){
         return listPages.at(listPages.size() - 1);
     }
-    return listPages.at(nb - 1);
+    return listPages.at(nb);
 }
 bool book::addPage(page page){
     if(std::find(listPages.begin(), listPages.end(), page) == listPages.end()){

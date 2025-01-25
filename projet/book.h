@@ -9,6 +9,7 @@ class book
 public:
     static std::vector<book> listBooks;
     book();
+
     book(std::string url2);
     book(std::string authors, std::string url, std::string description, std::string title);
     bool addPage(page p);
@@ -21,11 +22,14 @@ public:
     bool operator==(const book b2){
         return url == b2.url;
     }
-    static int getPosition(book b);
+    bool operator==(const book* b2){
+        return url == b2->url;
+    }
+    static int getPosition(book* b);
     int getNumberPage();
     std::string getAuthors() const;
     void setAuthors(const std::string &newAuthors);
-    std::string getUrl() const;
+    std::string getUrl();
     void setUrl(const std::string &newUrl);
     std::string getDescription() const;
     void setDescription(const std::string &newDescription);

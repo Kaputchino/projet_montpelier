@@ -15,5 +15,6 @@ ImageBitmap SepiaFilter::apply(ImageBitmap image) const {
 }
 // Implementation du IdentityFilter (nothing)
 ImageBitmap IdentityFilter::apply(ImageBitmap image) const {
+    image.setImage(image.getUntreatedImage());
     return image;
 }

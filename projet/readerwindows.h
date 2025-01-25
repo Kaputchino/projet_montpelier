@@ -18,10 +18,13 @@ public:
     ~ReaderWindows();
 
     book getB() const;
-    void setB(const book &newB);
 
     ImageFilter*getImageFilter() const;
     void setImageFilter(std::unique_ptr<ImageFilter> newImageFilter);
+    
+    void startProcess();
+    
+    void setB(book newB);
 
 private:
     Ui::ReaderWindows *ui;

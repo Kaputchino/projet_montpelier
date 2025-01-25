@@ -366,10 +366,13 @@ C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstn
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/FileFormatHandler.h
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/librarywindow.h
  mmc:Q_OBJECT
+ mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/ImageFilter.h
  mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/book.h
  mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/projet_autogen/moc_predefs.h
+ mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/imagebitmap.h
  mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/librarywindow.h
  mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/page.h
+ mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/readerwindows.h
  mdp:C:/qt2/6.8.1/mingw_64/include/QtCore/q20functional.h
  mdp:C:/qt2/6.8.1/mingw_64/include/QtCore/q20iterator.h
  mdp:C:/qt2/6.8.1/mingw_64/include/QtCore/q20memory.h
@@ -1462,7 +1465,11 @@ C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstn
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/page.h
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/readerwindows.h
  mmc:Q_OBJECT
+ mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/ImageFilter.h
+ mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/book.h
  mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/projet_autogen/moc_predefs.h
+ mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/imagebitmap.h
+ mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/page.h
  mdp:C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/readerwindows.h
  mdp:C:/qt2/6.8.1/mingw_64/include/QtCore/q20functional.h
  mdp:C:/qt2/6.8.1/mingw_64/include/QtCore/q20iterator.h
@@ -1839,3 +1846,5 @@ C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstn
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/page.cpp
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/readerwindows.cpp
  uic:ui_readerwindows.h
+C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/imagebitmap.h
+C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/imagebitmap.cpp

@@ -1,7 +1,10 @@
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/projet_autogen/EWIEGA46WW/moc_librarywindow.cpp: C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/librarywindow.h \
   C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/projet_autogen/moc_predefs.h \
+  C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/ImageFilter.h \
   C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/book.h \
+  C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/imagebitmap.h \
   C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/page.h \
+  C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/readerwindows.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/q20functional.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/q20iterator.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/q20memory.h \

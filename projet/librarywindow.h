@@ -18,8 +18,9 @@ public:
     explicit LibraryWindow(QWidget *parent = nullptr);
     ~LibraryWindow();
     void openFileDialogue();
-    void addBook(book* b);
-    void toLaunchNewBook(book* b);
+    void addBook(book b);
+    void toLaunchNewBook(book b);
+
 private slots:
     void handleButton();
     void on_addBookBtn_clicked();

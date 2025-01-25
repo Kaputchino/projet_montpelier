@@ -41,12 +41,10 @@ void LibraryWindow::addBook(book b)
     QPushButton* button = new QPushButton;
     button->setText(QString::fromStdString("Read"));
     rightLayout->addWidget(button);
-    button->setProperty("id",book::getPosition(b));
-
     //QObject::connect(button,&QPushButton::clicked,this,&LibraryWindow::on_clicked_btn_to_book);
-    int i = book::getPosition(b);
-    connect(button, &QPushButton::clicked, this, [this, i, &b]() {
-        this->toLaunchNewBook(&b);
+    connect(button, &QPushButton::clicked, this, [this, b]() {
+        std::cout<<b.getAuthors()<<std::endl;
+        this->toLaunchNewBook(b);
     });
 
     newLayoutGeneral->addLayout(rightLayout);
@@ -54,12 +52,20 @@ void LibraryWindow::addBook(book b)
 
 }
 
-void LibraryWindow::toLaunchNewBook(book* b)
+void LibraryWindow::toLaunchNewBook(book b)
 {
+    std::cout<<"launch"<<b.getTitle()<<std::endl;
+    std::cout<<"hi"<<std::endl;
     readerWindow = new ReaderWindows(this);
-    readerWindow->setB(*b);
+    std::cout<<"hi"<<std::endl;
+    readerWindow->setB(b);
+    std::cout<<"hi"<<std::endl;
+    IdentityFilter idf = IdentityFilter();
+    readerWindow->setImageFilter(std::make_unique<IdentityFilter>(idf));
+    readerWindow->startProcess();
+
     readerWindow->show();
-    this->hide();
+    //this->hide();
 }
 void LibraryWindow::handleButton()
 {

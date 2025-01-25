@@ -1,6 +1,6 @@
 #include "LibrarySystem.h"
 #include <iostream>
-
+/**
 // Implementation de Image
 Image::Image(const std::string& path) : filePath(path) {}
 
@@ -8,7 +8,7 @@ const std::string& Image::getPath() const {
     return filePath;
 }
 
-std::shared_ptr<Image> Image::applyFilter(const ImageFilter& filter) const {
+ImageBitmap Image::applyFilter(const ImageFilter& filter) const {
     return filter.apply(std::make_shared<Image>(*this));
 }
 
@@ -50,3 +50,4 @@ bool Library::importBooksFromFolder(const std::string& folderPath) {
 const std::vector<std::shared_ptr<Book>>& Library::getBooks() const {
     return books;
 }
+**/

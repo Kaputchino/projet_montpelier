@@ -12,9 +12,13 @@ public:
     bool operator==(const page b2){
         return url == b2.url;
     }
+    ImageBitmap getImgBit() const;
+    void setImgBit(const ImageBitmap &newImgBit);
+
 private:
     std::string url;
     ImageBitmap imgBit;
+
     //image image;
     //std::string urlfilter;
     //image untrated image;

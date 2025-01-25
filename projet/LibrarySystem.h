@@ -6,8 +6,8 @@
 
 #include "ImageFilter.h"
 #include "FileFormatHandler.h"
-
-// Classe représentant une image
+/*
+/// Classe représentant une image
 class Image {
 private:
     std::string filePath;  // Chemin de l'image sur le disque
@@ -52,5 +52,5 @@ public:
     void registerFileHandler(std::unique_ptr<FileFormatHandler> handler);
     bool importBooksFromFolder(const std::string& folderPath);
     const std::vector<std::shared_ptr<Book>>& getBooks() const;
-};
+};*/
 #endif // LIBRARYSYSTEM_H
