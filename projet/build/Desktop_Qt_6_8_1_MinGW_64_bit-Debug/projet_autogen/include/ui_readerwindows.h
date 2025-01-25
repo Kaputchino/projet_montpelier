@@ -37,7 +37,7 @@ public:
     QHBoxLayout *horizontalLayout_6;
     QPushButton *beginBtn;
     QPushButton *beforeBtn;
-    QTextEdit *textEdit;
+    QTextEdit *inputNumber;
     QPushButton *afterBtn;
     QPushButton *endBtn;
     QMenuBar *menubar;
@@ -87,10 +87,10 @@ public:
 
         horizontalLayout_6->addWidget(beforeBtn);
 
-        textEdit = new QTextEdit(verticalLayoutWidget);
-        textEdit->setObjectName("textEdit");
+        inputNumber = new QTextEdit(verticalLayoutWidget);
+        inputNumber->setObjectName("inputNumber");
 
-        horizontalLayout_6->addWidget(textEdit);
+        horizontalLayout_6->addWidget(inputNumber);
 
         afterBtn = new QPushButton(verticalLayoutWidget);
         afterBtn->setObjectName("afterBtn");

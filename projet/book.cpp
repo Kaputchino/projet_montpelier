@@ -89,7 +89,13 @@ page book::getUrlImage(int nb)
     }
     return listPages.at(nb);
 }
+
+bool book::update()
+{
+    return exportBook(url);
+}
 bool book::addPage(page page){
+    std::cout <<page.getUrl()<<std::endl;
     if(std::find(listPages.begin(), listPages.end(), page) == listPages.end()){
         listPages.push_back(page);
         return true;
@@ -176,9 +182,9 @@ bool book::exportBook(std::string url){
     std::ofstream MyFile(url);
     MyFile << title <<std::endl;
     MyFile << authors <<std::endl;
-    MyFile << description<<std::endl;
     MyFile << progress<<std::endl;
     MyFile << getAllTagOneLine()<<std::endl;
+    MyFile << description<<std::endl;
     MyFile <<"end%info"<<std::endl;
     for(page p : listPages){
         MyFile << p.getUrl()<<std::endl;
