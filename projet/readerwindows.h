@@ -29,6 +29,10 @@ public:
     void onTextChanged();
 
     void loadImages(int v);
+    void beforeBtnPressed();
+    void endBtnPressed();
+    void afterBtnPressed();
+    void beginBtnPressed();
 
 private:
     Ui::ReaderWindows *ui;

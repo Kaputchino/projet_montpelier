@@ -19,11 +19,20 @@ void ReaderWindows::loadImages(int v)
     ui->inputNumber->setText(QString::fromStdString(std::to_string(v)));
 }
 
+
+
 void ReaderWindows::startProcess()
 {
     int v = b.getProgress();
     loadImages(v);
     connect(ui->inputNumber, &QTextEdit::textChanged, this, &ReaderWindows::onTextChanged);
+    connect(ui->beforeBtn, &QPushButton::clicked, this, &ReaderWindows::beforeBtnPressed);
+    connect(ui->afterBtn, &QPushButton::clicked, this, &ReaderWindows::afterBtnPressed);
+    connect(ui->beginBtn, &QPushButton::clicked, this, &ReaderWindows::beginBtnPressed);
+    connect(ui->endBtn, &QPushButton::clicked, this, &ReaderWindows::endBtnPressed);
+
+
+
 
 }
 
@@ -68,18 +77,27 @@ std::string remove_non_digits(const std::string& input) {
     return result;
 }
 
+
+
 void ReaderWindows::onTextChanged(){
     ui->inputNumber->blockSignals(true);
     QString currentText = ui->inputNumber->toPlainText();
     std::string str = currentText.toStdString();
     str = remove_non_digits(str);
+
     try {
-        int nValue = std::stoi(str);
+        int nValue = 0;
+        if(!str.empty()){
+            nValue = std::stoi(str);
+        }
         if(nValue>b.getNumberPage()){
             nValue = b.getNumberPage();
         }
         if(nValue % 2 == 0){
             nValue--;
+        }
+        if(nValue < 1){
+            nValue = 1;
         }
         b.setProgress(nValue);
         ui->inputNumber->setText(QString::fromStdString(str));
@@ -94,6 +112,59 @@ void ReaderWindows::onTextChanged(){
 
 }
 
+
+void ReaderWindows::beforeBtnPressed(){
+    QString currentText = ui->inputNumber->toPlainText();
+    std::string str = currentText.toStdString();
+    str = remove_non_digits(str);
+    try {
+        int nValue = std::stoi(str);
+        nValue--;
+        ui->inputNumber->setText(QString::fromStdString(std::to_string(nValue)));
+    }
+    catch(int i){
+
+    }
+}
+
+void ReaderWindows::afterBtnPressed(){
+    QString currentText = ui->inputNumber->toPlainText();
+    std::string str = currentText.toStdString();
+    str = remove_non_digits(str);
+    try {
+        int nValue = std::stoi(str);
+        nValue+=2;
+        ui->inputNumber->setText(QString::fromStdString(std::to_string(nValue)));
+    }
+    catch(int i){
+
+    }
+}
+
+void ReaderWindows::beginBtnPressed(){
+    QString currentText = ui->inputNumber->toPlainText();
+    std::string str = currentText.toStdString();
+    str = remove_non_digits(str);
+    try {
+
+        ui->inputNumber->setText(QString::fromStdString("1"));
+    }
+    catch(int i){
+
+    }
+}
+void ReaderWindows::endBtnPressed(){
+    QString currentText = ui->inputNumber->toPlainText();
+    std::string str = currentText.toStdString();
+    str = remove_non_digits(str);
+    try {
+        int nValue = b.getNumberPage();
+        ui->inputNumber->setText(QString::fromStdString(std::to_string(nValue)));
+    }
+    catch(int i){
+
+    }
+}
 ImageFilter*ReaderWindows::getImageFilter() const
 {
     return imageFilter.get();
