@@ -121,7 +121,7 @@ bool book::importBook(){
     std::ifstream MyReadFile(url);
     bool pagePart = false;
     int count = 0;
-
+    int countdes = 0;
     while (getline (MyReadFile, myText)) {
         if(!pagePart){
             //std::cout<<myText<<std::endl;
@@ -151,8 +151,11 @@ bool book::importBook(){
                 if(myText.find("end%info") != std::string::npos){
                     pagePart = true;
                 }else{
-                    description.append("\n");
+                    if(countdes != 0){
+                        description.append("\n");
+                    }
                     description.append(myText);
+                    countdes++;
                 }
             }
             count++;

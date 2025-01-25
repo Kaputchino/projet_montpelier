@@ -3,9 +3,8 @@
 #include <iostream>
 #include <ostream>
 
-void ReaderWindows::startProcess()
+void ReaderWindows::loadImages(int v)
 {
-    int v = b.getProgress();
     page p1 = b.getUrlImage(v-1);
     page p2 = b.getUrlImage(v);
     std::cout <<"dfdsf"<< p1.getUrl()<<std::endl;
@@ -18,6 +17,14 @@ void ReaderWindows::startProcess()
         ui->rightImg->setPixmap(pixmapRight);
     }
     ui->inputNumber->setText(QString::fromStdString(std::to_string(v)));
+}
+
+void ReaderWindows::startProcess()
+{
+    int v = b.getProgress();
+    loadImages(v);
+    connect(ui->inputNumber, &QTextEdit::textChanged, this, &ReaderWindows::onTextChanged);
+
 }
 
 void ReaderWindows::setB(book newB)
@@ -49,7 +56,43 @@ book ReaderWindows::getB() const
     return b;
 }
 
+inline bool not_digit(char ch) {
+    return '0' <= ch && ch <= '9';
+}
 
+std::string remove_non_digits(const std::string& input) {
+    std::string result;
+    std::copy_if(input.begin(), input.end(),
+                 std::back_inserter(result),
+                 not_digit);
+    return result;
+}
+
+void ReaderWindows::onTextChanged(){
+    ui->inputNumber->blockSignals(true);
+    QString currentText = ui->inputNumber->toPlainText();
+    std::string str = currentText.toStdString();
+    str = remove_non_digits(str);
+    try {
+        int nValue = std::stoi(str);
+        if(nValue>b.getNumberPage()){
+            nValue = b.getNumberPage();
+        }
+        if(nValue % 2 == 0){
+            nValue--;
+        }
+        b.setProgress(nValue);
+        ui->inputNumber->setText(QString::fromStdString(str));
+        loadImages(nValue);
+    }
+    catch (int i) {
+        // Block of code to handle errors
+        std::cout<<"ha"<<std::endl;
+    }
+    ui->inputNumber->blockSignals(false);
+
+
+}
 
 ImageFilter*ReaderWindows::getImageFilter() const
 {

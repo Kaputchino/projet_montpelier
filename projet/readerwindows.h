@@ -26,6 +26,10 @@ public:
     
     void setB(book newB);
 
+    void onTextChanged();
+
+    void loadImages(int v);
+
 private:
     Ui::ReaderWindows *ui;
     book b;

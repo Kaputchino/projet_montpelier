@@ -44,7 +44,8 @@ int main(int argc, char *argv[])
     for(book b:  book::listBooks){
         std::cout<<b.getUrl();
         l.addBook(b);
-        b.exportBook("C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/books/t.txt");
+        b.update();
+        //b.exportBook("C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/books/t.txt");
     }
     std::cout<<"fin lib"<<std::endl;
 
