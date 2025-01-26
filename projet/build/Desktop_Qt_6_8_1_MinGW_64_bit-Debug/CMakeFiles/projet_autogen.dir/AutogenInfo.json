@@ -284,6 +284,12 @@
 			null
 		],
 		[
+			"C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/modifyorcomposebook.h",
+			"MU",
+			"EWIEGA46WW/moc_modifyorcomposebook.cpp",
+			null
+		],
+		[
 			"C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/page.h",
 			"MU",
 			"EWIEGA46WW/moc_page.cpp",
@@ -414,6 +420,11 @@
 		],
 		[
 			"C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/modifyorcomposebook.cpp",
 			"MU",
 			null
 		],

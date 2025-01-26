@@ -15,6 +15,8 @@ public:
     //ImageBitmap getImgBit() const;
     //void setImgBit(const ImageBitmap &newImgBit);
 
+    void setUrl(const std::string &newUrl);
+
 private:
     std::string url;
     //ImageBitmap imgBit;

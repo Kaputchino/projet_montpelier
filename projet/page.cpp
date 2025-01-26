@@ -8,6 +8,11 @@ page::page(std::string url2){
     std::cout<<url<<std::endl;
     //imgBit = ImageBitmap(url2);
 }
+
+void page::setUrl(const std::string &newUrl)
+{
+    url = newUrl;
+}
 /*
 ImageBitmap page::getImgBit() const
 {

@@ -24,6 +24,7 @@ qt_add_executable(projet
     book.h book.cpp
     page.h page.cpp
     imagebitmap.h imagebitmap.cpp
+    modifyorcomposebook.h modifyorcomposebook.cpp modifyorcomposebook.ui
 )
 # Indique le répertoire contenant les fichiers d'en-tête de libjpeg-turbo
  include_directories("C:/Users/andre/OneDrive/Documents/librcplusplus/libjpeg-turbo-3.0.1/libjpeg-turbo-3.0.1")

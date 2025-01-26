@@ -94,6 +94,11 @@ bool book::update()
 {
     return exportBook(url);
 }
+
+std::vector<page> book::getListPages() const
+{
+    return listPages;
+}
 bool book::addPage(page page){
     std::cout <<page.getUrl()<<std::endl;
     if(std::find(listPages.begin(), listPages.end(), page) == listPages.end()){

@@ -101,6 +101,7 @@ void ReaderWindows::onTextChanged(){
         }
         b.setProgress(nValue);
         ui->inputNumber->setText(QString::fromStdString(str));
+        b.update();
         loadImages(nValue);
     }
     catch (int i) {
