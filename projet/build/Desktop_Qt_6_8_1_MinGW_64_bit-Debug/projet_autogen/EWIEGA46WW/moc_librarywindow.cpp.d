@@ -120,6 +120,7 @@ C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstn
   C:/qt2/6.8.1/mingw_64/include/QtCore/qtversionchecks.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/qtypeinfo.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/qtypes.h \
+  C:/qt2/6.8.1/mingw_64/include/QtCore/qurl.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/qutf8stringview.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/qvariant.h \
   C:/qt2/6.8.1/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -139,12 +140,17 @@ C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstn
   C:/qt2/6.8.1/mingw_64/include/QtGui/qkeysequence.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qpaintdevice.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qpalette.h \
+  C:/qt2/6.8.1/mingw_64/include/QtGui/qpen.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qpixelformat.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qpixmap.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qpolygon.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qregion.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qrgb.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qrgba64.h \
+  C:/qt2/6.8.1/mingw_64/include/QtGui/qtextcursor.h \
+  C:/qt2/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+  C:/qt2/6.8.1/mingw_64/include/QtGui/qtextformat.h \
+  C:/qt2/6.8.1/mingw_64/include/QtGui/qtextoption.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qtgui-config.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qtguiexports.h \
   C:/qt2/6.8.1/mingw_64/include/QtGui/qtguiglobal.h \
@@ -153,6 +159,8 @@ C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstn
   C:/qt2/6.8.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/qt2/6.8.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/qt2/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+  C:/qt2/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+  C:/qt2/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \
   C:/qt2/6.8.1/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/qt2/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/qt2/6.8.1/mingw_64/include/QtWidgets/qsizepolicy.h \

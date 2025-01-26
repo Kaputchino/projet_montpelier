@@ -25,6 +25,13 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
+      <widget class="QPushButton" name="homrbtn">
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
         <widget class="QLabel" name="TitleLabel">
@@ -81,7 +88,18 @@
       </layout>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="listPages"/>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Pages</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="urlEdit"/>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>

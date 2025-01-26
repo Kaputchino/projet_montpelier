@@ -95,6 +95,20 @@ bool book::update()
     return exportBook(url);
 }
 
+std::string book::getAllUrl()
+{
+    int count = 0;
+    std::string str ="";
+    for(page p : listPages){
+        if(count!= 0){
+            str+="\n";
+        }
+        str +=p.getUrl();
+        count++;
+    }
+    return str;
+}
+
 std::vector<page> book::getListPages() const
 {
     return listPages;

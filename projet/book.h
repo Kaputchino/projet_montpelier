@@ -39,6 +39,11 @@ public:
     void setProgress(int newProgress);
     page getUrlImage(int nb);
     bool update();
+    void clearPage(){
+        listPages.clear();
+    }
+    std::string getAllUrl();
+    std::vector<page> getListPages() const;
 
 private:
     std::string authors;

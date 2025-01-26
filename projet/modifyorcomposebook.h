@@ -2,7 +2,9 @@
 #define MODIFYORCOMPOSEBOOK_H
 
 #include "book.h"
+//#include "librarywindow.h"
 #include <QMainWindow>
+#include <qlineedit.h>
 
 namespace Ui {
 class ModifyOrComposeBook;
@@ -22,10 +24,13 @@ public:
     void onUpdateTitle();
     void onUpdateDescription();
     void onUpdateProgress();
-    void onEdditPage(page p);
+    void onUpdatePage();
+    void onEdditPage(page p,QLineEdit ql);
+    //void home();
 
 private:
     Ui::ModifyOrComposeBook *ui;
+    //LibraryWindow* lbw;
     book book;
 };
 

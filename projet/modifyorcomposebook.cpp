@@ -2,6 +2,7 @@
 #include "ui_modifyorcomposebook.h"
 #include <iostream>
 #include <ostream>
+#include <qpushbutton.h>
 
 ModifyOrComposeBook::ModifyOrComposeBook(QWidget *parent)
     : QMainWindow(parent)
@@ -39,20 +40,19 @@ void ModifyOrComposeBook::setB( class book newB)
     ui->pageEditor->setText(QString::fromStdString(std::to_string(book.getProgress())));
     ui->pageEditor->blockSignals(false);
 
+
 connect(ui->descriptioNEdition, &QTextEdit::textChanged, this, &ModifyOrComposeBook::onUpdateDescription);
     connect(ui->auorEditor, &QLineEdit::textChanged, this, &ModifyOrComposeBook::onUpdateAuthor);
     connect(ui->TtitleEdit, &QLineEdit::textChanged, this, &ModifyOrComposeBook::onUpdateTitle);
     connect(ui->pageEditor, &QLineEdit::textChanged, this, &ModifyOrComposeBook::onUpdateProgress);
     int count = 0;
-    for(page p : book.getListPages()){
-        QLineEdit* ql = new QLineEdit();
-        ql->setText(QString::fromStdString(p.getUrl()));
-        ui->listPages->addWidget(ql);
-        connect(ql, &QLineEdit::textEdited, this, [this, p]() {
-            this->toLaunchNewBook(b);
-        });
-    }
 
+
+
+    ui->urlEdit->blockSignals(true);
+    ui->urlEdit->setText(QString::fromStdString(book.getAllUrl()));
+    ui->urlEdit->blockSignals(false);
+    connect(ui->urlEdit, &QTextEdit::textChanged, this, &ModifyOrComposeBook::onUpdatePage);
 
 
 
@@ -123,10 +123,37 @@ void ModifyOrComposeBook::onUpdateProgress()
     ui->pageEditor->blockSignals(false);
 }
 
+void ModifyOrComposeBook::onUpdatePage()
+{
+    QString TXT=ui->urlEdit->toPlainText(), Line;
+    std::cout<<"a"<<std::endl;
+    std::cout<<TXT.toStdString()<<std::endl;
+    QTextStream stream(&TXT);
+    std::cout<<"b"<<std::endl;
+    book.clearPage();
+    while (stream.readLineInto(&Line)) {
+        book.addPage(Line.toStdString());
+    }
+    //Set the device to pos 0
+    stream.seek(0);
+    book.update();
+
+}
+
 void ModifyOrComposeBook::onEdditPage(page p, QLineEdit ql)
 {
     p.setUrl(ql.text().toStdString());
 }
+
+/**
+void ModifyOrComposeBook::home()
+{
+
+    lbw = new LibraryWindow(this);
+    lbw->show();
+    this->hide();
+
+}**/
 
 
 
