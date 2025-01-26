@@ -1,10 +1,13 @@
-le manifeste du ârti communiste
-karl marx, friedrich engels
+le manifeste du Parti communiste
+Karl marx, friedrich engels
 1
 essaie~philsophie~poltique~allemagne
-livre histroique allemand
+livre Histroique allemand
 origine des partis communistes dit marxiste
 end%info
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/image/1.bmp
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/image/2.bmp
 C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/image/3.bmp
+C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/image/4.bmp
+C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/image/5.bmp
+C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/image/6.bmp

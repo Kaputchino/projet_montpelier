@@ -2,6 +2,7 @@
 #define LIBRARYWINDOW_H
 
 #include "book.h"
+#include "modifyorcomposebook.h"
 #include "readerwindows.h"
 #include <QMainWindow>
 #include <qpushbutton.h>
@@ -20,6 +21,7 @@ public:
     void openFileDialogue();
     void addBook(book b);
     void toLaunchNewBook(book b);
+    void toEddit(book b);
 
 private slots:
     void handleButton();
@@ -30,6 +32,7 @@ private:
     Ui::LibraryWindow *ui;
     QPushButton *addBookBtn;
     ReaderWindows *readerWindow;
+    ModifyOrComposeBook * modifyWindow;
 };
 
 

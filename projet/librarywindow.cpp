@@ -47,6 +47,16 @@ void LibraryWindow::addBook(book b)
         this->toLaunchNewBook(b);
     });
 
+    QPushButton* buttonEdit = new QPushButton;
+    buttonEdit->setText(QString::fromStdString("Edit"));
+    rightLayout->addWidget(buttonEdit);
+    //QObject::connect(button,&QPushButton::clicked,this,&LibraryWindow::on_clicked_btn_to_book);
+    connect(buttonEdit, &QPushButton::clicked, this, [this, b]() {
+        this->toEddit(b);
+    });
+
+
+
     newLayoutGeneral->addLayout(rightLayout);
     ui->bookLayout->addLayout(newLayoutGeneral);
 
@@ -66,6 +76,13 @@ void LibraryWindow::toLaunchNewBook(book b)
 
     readerWindow->show();
     //this->hide();
+}
+
+void LibraryWindow::toEddit(book b)
+{
+    modifyWindow = new ModifyOrComposeBook(this);
+    modifyWindow->setB(b);
+    modifyWindow->show();
 }
 void LibraryWindow::handleButton()
 {

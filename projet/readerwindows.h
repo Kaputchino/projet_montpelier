@@ -26,6 +26,14 @@ public:
     
     void setB(book newB);
 
+    void onTextChanged();
+
+    void loadImages(int v);
+    void beforeBtnPressed();
+    void endBtnPressed();
+    void afterBtnPressed();
+    void beginBtnPressed();
+
 private:
     Ui::ReaderWindows *ui;
     book b;

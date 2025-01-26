@@ -153,6 +153,14 @@ build CMakeFiles/projet.dir/imagebitmap.cpp.obj: CXX_COMPILER__projet_unscanned_
   OBJECT_DIR = CMakeFiles\projet.dir
   OBJECT_FILE_DIR = CMakeFiles\projet.dir
 
+build CMakeFiles/projet.dir/modifyorcomposebook.cpp.obj: CXX_COMPILER__projet_unscanned_Debug C$:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/modifyorcomposebook.cpp || cmake_object_order_depends_target_projet
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\projet.dir\modifyorcomposebook.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/projet_autogen/include -IC:/Users/andre/OneDrive/Documents/librcplusplus/libjpeg-turbo-3.0.1/libjpeg-turbo-3.0.1 -isystem C:/qt2/6.8.1/mingw_64/include/QtCore -isystem C:/qt2/6.8.1/mingw_64/include -isystem C:/qt2/6.8.1/mingw_64/mkspecs/win32-g++ -isystem C:/qt2/6.8.1/mingw_64/include/QtWidgets -isystem C:/qt2/6.8.1/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\projet.dir
+  OBJECT_FILE_DIR = CMakeFiles\projet.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target projet
@@ -161,7 +169,7 @@ build CMakeFiles/projet.dir/imagebitmap.cpp.obj: CXX_COMPILER__projet_unscanned_
 #############################################
 # Link the executable projet.exe
 
-build projet.exe: CXX_EXECUTABLE_LINKER__projet_Debug CMakeFiles/projet.dir/projet_autogen/mocs_compilation.cpp.obj CMakeFiles/projet.dir/main.cpp.obj CMakeFiles/projet.dir/mainwindow.cpp.obj CMakeFiles/projet.dir/FileFormatHandler.cpp.obj CMakeFiles/projet.dir/ImageFilter.cpp.obj CMakeFiles/projet.dir/librarySystem.cpp.obj CMakeFiles/projet.dir/readerwindows.cpp.obj CMakeFiles/projet.dir/librarywindow.cpp.obj CMakeFiles/projet.dir/bookwindow.cpp.obj CMakeFiles/projet.dir/createbook.cpp.obj CMakeFiles/projet.dir/book.cpp.obj CMakeFiles/projet.dir/page.cpp.obj CMakeFiles/projet.dir/imagebitmap.cpp.obj | C$:/qt2/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/qt2/6.8.1/mingw_64/lib/libQt6Gui.a C$:/qt2/6.8.1/mingw_64/lib/libQt6Core.a C$:/qt2/6.8.1/mingw_64/lib/libQt6EntryPoint.a || projet_autogen projet_autogen_timestamp_deps
+build projet.exe: CXX_EXECUTABLE_LINKER__projet_Debug CMakeFiles/projet.dir/projet_autogen/mocs_compilation.cpp.obj CMakeFiles/projet.dir/main.cpp.obj CMakeFiles/projet.dir/mainwindow.cpp.obj CMakeFiles/projet.dir/FileFormatHandler.cpp.obj CMakeFiles/projet.dir/ImageFilter.cpp.obj CMakeFiles/projet.dir/librarySystem.cpp.obj CMakeFiles/projet.dir/readerwindows.cpp.obj CMakeFiles/projet.dir/librarywindow.cpp.obj CMakeFiles/projet.dir/bookwindow.cpp.obj CMakeFiles/projet.dir/createbook.cpp.obj CMakeFiles/projet.dir/book.cpp.obj CMakeFiles/projet.dir/page.cpp.obj CMakeFiles/projet.dir/imagebitmap.cpp.obj CMakeFiles/projet.dir/modifyorcomposebook.cpp.obj | C$:/qt2/6.8.1/mingw_64/lib/libQt6Widgets.a C$:/qt2/6.8.1/mingw_64/lib/libQt6Gui.a C$:/qt2/6.8.1/mingw_64/lib/libQt6Core.a C$:/qt2/6.8.1/mingw_64/lib/libQt6EntryPoint.a || projet_autogen projet_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/qt2/6.8.1/mingw_64/lib/libQt6Widgets.a  C:/qt2/6.8.1/mingw_64/lib/libQt6Gui.a  C:/qt2/6.8.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/qt2/6.8.1/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -248,7 +256,7 @@ build projet_autogen_timestamp_deps: phony
 #############################################
 # Utility command for projet_autogen
 
-build projet_autogen: phony CMakeFiles/projet_autogen projet_autogen/include/ui_mainwindow.h projet_autogen/include/ui_readerwindows.h projet_autogen/include/ui_librarywindow.h projet_autogen/include/ui_bookwindow.h projet_autogen/include/ui_createbook.h projet_autogen/timestamp projet_autogen/mocs_compilation.cpp projet_autogen_timestamp_deps
+build projet_autogen: phony CMakeFiles/projet_autogen projet_autogen/include/ui_mainwindow.h projet_autogen/include/ui_readerwindows.h projet_autogen/include/ui_librarywindow.h projet_autogen/include/ui_bookwindow.h projet_autogen/include/ui_createbook.h projet_autogen/include/ui_modifyorcomposebook.h projet_autogen/timestamp projet_autogen/mocs_compilation.cpp projet_autogen_timestamp_deps
 
 
 #############################################
@@ -265,7 +273,7 @@ build projet_autogen/timestamp projet_autogen/mocs_compilation.cpp | ${cmake_nin
 #############################################
 # Phony custom command for CMakeFiles\projet_autogen
 
-build CMakeFiles/projet_autogen projet_autogen/include/ui_mainwindow.h projet_autogen/include/ui_readerwindows.h projet_autogen/include/ui_librarywindow.h projet_autogen/include/ui_bookwindow.h projet_autogen/include/ui_createbook.h | ${cmake_ninja_workdir}CMakeFiles/projet_autogen ${cmake_ninja_workdir}projet_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}projet_autogen/include/ui_readerwindows.h ${cmake_ninja_workdir}projet_autogen/include/ui_librarywindow.h ${cmake_ninja_workdir}projet_autogen/include/ui_bookwindow.h ${cmake_ninja_workdir}projet_autogen/include/ui_createbook.h: phony projet_autogen/timestamp || projet_autogen_timestamp_deps
+build CMakeFiles/projet_autogen projet_autogen/include/ui_mainwindow.h projet_autogen/include/ui_readerwindows.h projet_autogen/include/ui_librarywindow.h projet_autogen/include/ui_bookwindow.h projet_autogen/include/ui_createbook.h projet_autogen/include/ui_modifyorcomposebook.h | ${cmake_ninja_workdir}CMakeFiles/projet_autogen ${cmake_ninja_workdir}projet_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}projet_autogen/include/ui_readerwindows.h ${cmake_ninja_workdir}projet_autogen/include/ui_librarywindow.h ${cmake_ninja_workdir}projet_autogen/include/ui_bookwindow.h ${cmake_ninja_workdir}projet_autogen/include/ui_createbook.h ${cmake_ninja_workdir}projet_autogen/include/ui_modifyorcomposebook.h: phony projet_autogen/timestamp || projet_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

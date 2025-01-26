@@ -38,6 +38,7 @@ public:
     int getProgress() const;
     void setProgress(int newProgress);
     page getUrlImage(int nb);
+    bool update();
 
 private:
     std::string authors;

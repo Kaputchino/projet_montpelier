@@ -89,7 +89,18 @@ page book::getUrlImage(int nb)
     }
     return listPages.at(nb);
 }
+
+bool book::update()
+{
+    return exportBook(url);
+}
+
+std::vector<page> book::getListPages() const
+{
+    return listPages;
+}
 bool book::addPage(page page){
+    std::cout <<page.getUrl()<<std::endl;
     if(std::find(listPages.begin(), listPages.end(), page) == listPages.end()){
         listPages.push_back(page);
         return true;
@@ -115,7 +126,7 @@ bool book::importBook(){
     std::ifstream MyReadFile(url);
     bool pagePart = false;
     int count = 0;
-
+    int countdes = 0;
     while (getline (MyReadFile, myText)) {
         if(!pagePart){
             //std::cout<<myText<<std::endl;
@@ -145,8 +156,11 @@ bool book::importBook(){
                 if(myText.find("end%info") != std::string::npos){
                     pagePart = true;
                 }else{
-                    description.append("\n");
+                    if(countdes != 0){
+                        description.append("\n");
+                    }
                     description.append(myText);
+                    countdes++;
                 }
             }
             count++;
@@ -176,9 +190,9 @@ bool book::exportBook(std::string url){
     std::ofstream MyFile(url);
     MyFile << title <<std::endl;
     MyFile << authors <<std::endl;
-    MyFile << description<<std::endl;
     MyFile << progress<<std::endl;
     MyFile << getAllTagOneLine()<<std::endl;
+    MyFile << description<<std::endl;
     MyFile <<"end%info"<<std::endl;
     for(page p : listPages){
         MyFile << p.getUrl()<<std::endl;

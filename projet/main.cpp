@@ -33,13 +33,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     //MainWindow w;
     //w.show();
-    /**
-    QImage right;
-    right.load("C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/right.png");
-    QImage left;
-    left.load("left.png");
-    ReaderWindows r;
-    r.show();**/
+
 
     processReadBooksSaved("C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/books");
 
@@ -50,12 +44,15 @@ int main(int argc, char *argv[])
     for(book b:  book::listBooks){
         std::cout<<b.getUrl();
         l.addBook(b);
+        b.update();
+        //b.exportBook("C:/Users/andre/OneDrive/Documents/devoir/fac/MPRO/m1/cplusplus/projets/qt/firstnewtry/projet/books/t.txt");
     }
     std::cout<<"fin lib"<<std::endl;
 
 
 
     l.show();
+
 
 
 
